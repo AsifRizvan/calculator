@@ -5,6 +5,10 @@ document.addEventListener('DOMContentLoaded', () => {
         result.value += num;
     }
 
+    window.backspace = function() {
+        result.value = result.value.slice(0, -1);
+    }
+
     window.clearResult = function() {
         result.value = '';
     }
